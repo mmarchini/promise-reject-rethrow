@@ -1,0 +1,29 @@
+{
+  "name": "promise-reject-rethrow",
+  "version": "0.1.0",
+  "description": "Rethrow Promise rejection in the same tick",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmarchini/promise-reject-rethrow.git"
+  },
+  "keywords": [
+    "promise",
+    "unhandled-rejection",
+    "reject",
+    "error",
+    "postmortem"
+  ],
+  "author": "Matheus Marchini <mat@mmarchini.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmarchini/promise-reject-rethrow/issues"
+  },
+  "homepage": "https://github.com/mmarchini/promise-reject-rethrow#readme",
+  "dependencies": {
+    "set-promise-reject-callback": "^1.0.0"
+  }
+}
