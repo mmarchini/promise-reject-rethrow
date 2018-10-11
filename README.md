@@ -48,3 +48,8 @@ Or, if you want to generate a core dump on unhandled rejections:
 ```
 $ node -r promise-reject-rethrow --abort-on-uncaught-exception example.js
 ```
+
+## Caveats
+
+Stack trace for the core dump is not complete, we're still missing calls in the
+Promise resolution path.
