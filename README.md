@@ -5,6 +5,9 @@ using Promises.
 
 **WARNING: THIS PACKAGE FORCES EXIT ON UNHANDLED REJECTIONS**
 
+**This package is still experimental. Behavior can drastically change in future
+versions.**
+
 ## Usage
 
 ```javascript
@@ -21,7 +24,7 @@ foo();
 ```
 
 ```bash
-$ npm install --save promise-reject-rethrow
+$ npm install --save promise-reject-rethrow example.js
 $ node -r promise-reject-rethrow example.js
 /Users/mmarchini/workspace/mmarchini/promise-reject-rethrow/index.js:4
   throw reason;
@@ -38,4 +41,10 @@ Error
     at Module.load (internal/modules/cjs/loader.js:599:32)
     at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
     at Function.Module._load
+```
+
+Or, if you want to generate a core dump on unhandled rejections:
+
+```
+$ node -r promise-reject-rethrow --abort-on-uncaught-exception example.js
 ```
